@@ -1,0 +1,29 @@
+package assignments;
+
+import java.util.Scanner;
+
+public class Assignment3Question3a {
+	public static void main(String[] args) {
+		int a, b;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("please enter number 1:");
+		a = scan.nextInt();
+		System.out.println("please enter number 2:");
+		b = scan.nextInt();
+		scan.close();
+
+		int sum = a + b;
+		System.out.println("Sum is" + ' ' + sum);
+
+		int sub = a - b;
+		System.out.println("sub is" + ' ' + sub);
+
+		int mult = a * b;
+		System.out.println("mul is" + ' ' + mult);
+
+		int div = a / b;
+		System.out.println("div is" + ' ' + div);
+
+	}
+
+}

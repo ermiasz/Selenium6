@@ -1,0 +1,19 @@
+package Tutorial;
+
+public class StringLearning {
+
+	public static void main(String[] args) {
+
+		String str = "Tom made my space";
+
+		// System.out.println(str.length()); //.length is used for counting the string
+		// String upper = str.toUpperCase(); // to make a particular string to an upper
+		// case
+
+		// System.out.println(str.toUpperCase());// used for to make string upper case
+		// System.out.println(str.toLowerCase());// used for to make string lower case
+		System.out.println(str.trim());
+
+	}
+
+}

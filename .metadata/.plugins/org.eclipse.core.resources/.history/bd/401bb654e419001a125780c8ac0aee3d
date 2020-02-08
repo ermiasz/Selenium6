@@ -1,0 +1,21 @@
+package Tutorial;
+
+import java.util.Scanner;
+
+public class UserInput {
+
+	public static void main(String[] args) {
+
+//datatype variable= value is which the user is going to type
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("what is your name?");
+
+		String x = sc.next();
+
+		System.out.println(" Hello " + x);
+		// To give space leave space before and after the word
+
+	}
+
+}

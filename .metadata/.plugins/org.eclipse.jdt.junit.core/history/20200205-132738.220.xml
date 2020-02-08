@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MercuryTours (1)" project="Maven_First_Class" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.Maven_First_Class.MercuryTours" time="42.228">
+    <testcase name="Mercurywebsite" classname="com.Maven_First_Class.MercuryTours" time="42.228"/>
+  </testsuite>
+</testrun>

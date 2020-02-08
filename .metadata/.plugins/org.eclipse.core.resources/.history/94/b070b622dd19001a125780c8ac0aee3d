@@ -1,0 +1,26 @@
+package Tutorial;
+
+public class logical_Programming {
+
+	public static void main(String[] args) {
+
+		// single equal sign is used when you are assigning something example x=10
+		// double equal sign is used when you are comparing something example x==10
+		// meaning of if is to give proper condition
+		// meaning of else is, if the condition is not met, then else statement is
+		// executed
+
+		int x = 10;
+		int y = 6;
+
+		int sum = x + y;
+
+		if (sum == 15) {
+			System.out.println("your equation is right");
+		} else {
+			System.out.println("your equation is not right " + " because the sum is " + sum);
+		}
+
+	}
+
+}

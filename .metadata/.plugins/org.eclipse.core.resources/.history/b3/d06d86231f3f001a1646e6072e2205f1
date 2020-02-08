@@ -1,0 +1,46 @@
+package com.Maven_First_Class;
+
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+public class MercuryTours {
+
+	@Test
+	public void Mercurywebsite() throws Exception {
+
+		System.setProperty("webdriver.chrome.driver",
+				"/Maven_First_Class/Driver/chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get("http://newtours.demoaut.com/mercurywelcome.php");
+
+		String actual_title = driver.getTitle();
+		String expected_title = "Welcome: Mercury Tours";
+
+		Assert.assertEquals(actual_title, expected_title);
+
+		driver.findElement(By.name("userName")).sendKeys("mercury");
+		driver.findElement(By.name("password")).sendKeys("mercury");
+		driver.findElement(By.name("login")).click();
+
+		try {
+			driver.findElement(By.linkText("SIGN-OFF")).isDisplayed();
+			System.out.println("Pass");
+		} catch (NoSuchElementException e) {
+			System.out.println("Fail");
+		}
+		Thread.sleep(5000);
+		driver.close();
+		driver.quit();
+	}
+
+}

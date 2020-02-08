@@ -1,0 +1,30 @@
+package com.Maven_First_Class;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TechFios {
+	@Test
+	public void techfioslogin() {
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\eyerus\\eclipse-workspace\\Maven_First_Class\\Driver\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
+		driver.get("http://techfios.com/test/billing/?ng=admin/");
+		driver.findElement(By.xpath(input[contains(@placeholder,'Email Address')])).
+		
+		String expectedTitle = "Dashboard- Techfios Test Application - Billing";
+		String actualTitle = driver.getTitle();
+
+	}
+
+}

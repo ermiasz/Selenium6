@@ -1,0 +1,14 @@
+package com.ermias.core.cls;
+
+public class SquareTest4 {
+
+	public static void main(String[] args) {
+
+		Square sq = new Square();
+		int area = sq.calcArea();
+		System.out.println("Area is " + area);
+		sq.length = 5;
+		area = sq.calcArea();
+		System.out.println("Area is " + area);
+	}
+}

@@ -1,0 +1,13 @@
+package Tutorial;
+
+public class StringLearning {
+
+	public static void main(String[] args) {
+
+		String str = "Tom made myspace";
+
+		System.out.println(str.length());
+
+	}
+
+}

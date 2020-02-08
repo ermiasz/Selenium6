@@ -1,0 +1,24 @@
+package Tutorial;
+
+import java.util.Scanner;
+
+public class MathMaticalScanner {
+
+	public static void main(String[] args) {
+
+		System.out.println("Enter two digits for addition");
+
+		Scanner in = new Scanner(System.in);
+
+		System.out.println("Give your first number");
+		int x = in.nextInt();
+		System.out.println("Give your second number");
+
+		int y = in.nextInt();
+		int z = x + y;
+
+		System.out.println("answer is" + z);
+
+	}
+
+}

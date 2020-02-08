@@ -1,0 +1,34 @@
+package Tutorial;
+
+public class StringLearning {
+
+	public static void main(String[] args) {
+
+		String str = "Tom made myspace";
+		String age = "Tom was 35 years old that time";
+		String salary = "";
+
+		// System.out.println(str.length()); //.length is used for counting the string
+		// String upper = str.toUpperCase(); // to make a particular string to an upper
+		// case
+
+		// System.out.println(str.toUpperCase());// used for to make string upper case
+		// System.out.println(str.toLowerCase());// used for to make string lower case
+		// System.out.println(str.trim()); // used for taking out the white space
+//System.out.println(str.concat("\n and it was popular that time"));// if you want to concatenates into a new line use "\n"
+		// System.out.println(str.contains("tom")); // contains check for if a
+		// particular value exists
+
+		// System.out.println(str.startsWith("35")); //looks for what alphabet or a
+		// word it starts with
+
+		// System.out.println(age.endsWith("e")); //ends with checks the ending of a
+		// particular word
+
+		// System.out.println(str.replace("Tom", "Mark")); // replacing a word
+
+		// System.out.println(salary.isEmpty()); // checks if a certain string is empty
+		// or not
+
+	}
+}

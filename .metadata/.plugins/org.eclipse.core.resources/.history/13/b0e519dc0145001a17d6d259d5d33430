@@ -1,0 +1,39 @@
+package com.Maven_First_Class;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TechFios {
+	@Test
+	public void techfioslogin() throws InterruptedException {
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\eyerus\\eclipse-workspace\\Maven_First_Class\\Driver\\chromedriver.exe");
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
+		driver.get("http://techfios.com/test/billing/?ng=admin/");
+		driver.findElement(By.id("username")).sendKeys("techfiosdemo@gmail.com");
+		driver.findElement(By.cssSelector("#password")).sendKeys("abc123");
+		driver.findElement(By.name("login")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.linkText("Add Deposit")).click();
+		driver.findElement(By.name("description")).sendKeys("New Home Buyer");
+		driver.findElement(By.name("amount")).sendKeys("5000");
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+
+		Thread.sleep(5000);
+
+		String expectedTitle = "Dashboard- Techfios Test Application - Billing";
+		String actualTitle = driver.getTitle();
+
+	}
+
+}

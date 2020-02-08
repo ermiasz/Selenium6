@@ -1,0 +1,33 @@
+package com.ermias.core.assignment;
+
+import java.util.Scanner;
+
+public class OddEvenExampleAssigment2 {
+	public static void main(String[] args) {
+		int a;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("please enter number 1:");
+		a = scan.nextInt();
+		scan.close();
+
+		// if (a % 2 == 0) {
+		System.out.println("The number a is even");
+	}else
+
+	{
+		System.out.println("The number a is odd");
+	}
+
+	}
+
+	Public
+
+	static void OddEven(int number) {
+		if (number % 2 == 0) {
+			return "Even";
+
+		} else {
+			return "Odd";
+		}
+	}
+}

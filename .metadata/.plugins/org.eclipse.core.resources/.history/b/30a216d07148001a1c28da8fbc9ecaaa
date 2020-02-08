@@ -1,0 +1,14 @@
+package testcases;
+
+import org.testng.Assert;
+
+public class RegTest {
+
+	@Test
+	public void doRegisterTest() {
+	 String expectedTitle="xxxxx";
+	 String actualTitle="yyyyy";
+	 
+	 Assert.assertEquals(xxxxx, yyyyyy);
+}
+}

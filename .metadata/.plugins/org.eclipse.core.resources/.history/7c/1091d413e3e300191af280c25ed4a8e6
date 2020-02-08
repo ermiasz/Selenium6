@@ -1,0 +1,16 @@
+package com.ermias.core.cls;
+
+public class MathUtilTest {
+
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 20;
+		System.out.println("Value of a " + a);
+		System.out.println("Value of b " + b);
+		Mathutil util = new MathUtil();
+		int sum = util.sum(a, b);
+		System.out.println("Sum of a and b is " + sum);
+
+	}
+
+}

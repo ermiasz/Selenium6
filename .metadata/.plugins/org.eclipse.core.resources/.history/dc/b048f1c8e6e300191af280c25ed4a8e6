@@ -1,0 +1,19 @@
+package com.ermias.core.cls;
+
+public class Square {
+
+	int length;
+
+	public int calcArea() {
+		int area = this.length * this.length;
+		return area;
+	}
+
+	public int getLength() {
+		return this.length;
+			}
+	public void setLength(int len) {
+		this.length = len;
+				
+	}
+}
