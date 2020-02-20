@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\eyerus\Github\GitHubTrial\Maven_First_Class\src\main\java\session4"/>
 			<item value="C:\Users\eyerus\eclipse-workspace\Selenium_First_Class"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,13 +27,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.Maven_First_Class"/>
 		</list>
 		<list key="groupId">
-			<item value="com"/>
 		</list>
 		<list key="artifactId">
-			<item value="Maven_First_Class"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
